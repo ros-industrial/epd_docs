@@ -14,27 +14,27 @@ Steps
 Follow the instruction below to deploy your own ONNX model. Be warned that the input shape of your model could
 be *currently incompatible* with that of **easy_perception_deployment**. If incompatible, please refer to the `Incompatible Model Input Shape?`_ section below if the deployment fails.
 
-1. Double-click on ``easy_perception_deployment.desktop`` file on your Desktop.
+**1.** Double-click on ``easy_perception_deployment.desktop`` file on your Desktop.
 
 The window labelled, **easy_perception_deployment** should appear.
 
-2. Click on button labelled, ``Deploy``.
+**2.** Click on button labelled, ``Deploy``.
 
 The window labelled, **Deploy** should appear.
 
-3. Click on the button labelled, **ONNX Model**, and select your ``.onnx`` model file.
+**3.** Click on the button labelled, **ONNX Model**, and select your ``.onnx`` model file.
 
 
-4. Click on the button labelled, **Label List**, and select your ``.txt`` file.
+**4.** Click on the button labelled, **Label List**, and select your ``.txt`` file.
 
 .. note::
     Our label list should contain the object text labels that are sorted such that they are correctly mapped to the way the model has been trained to classify. See ``data/label_list/coco_classes.txt`` for an example.
 
-5. Click on the DropDown menu labelled, **Use Case**, and select the Use-Case mode you wish to use.
+**5.** Click on the DropDown menu labelled, **Use Case**, and select the Use-Case mode you wish to use.
 
 For more details on what Use-Case filter you can use to finetune your model inference output, please refer to the section, `Use Case Configuration`_ below.
 
-6. Once your Use-Case filter is selected, Click on the button labelled, **Run**.
+**6.** Once your Use-Case filter is selected, Click on the button labelled, **Run**.
 
 Your ONNX model will be read and deployed as a ROS2 package, awaiting input images to arrive on its topic.
 

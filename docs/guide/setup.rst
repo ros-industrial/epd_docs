@@ -13,8 +13,8 @@ For better system performance, the **Local Installation** is recommended.
 
 System Requirements for Docker Installation
 +++++++++++++++++++++++++++++++++++++++++++
-**1.** `Anaconda3 <https://docs.anaconda.com/anaconda/install/>`_
-**2.** `nvidia docker <https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#installing-on-ubuntu-and-debian>`_ - Follow the linked instructions to install this dependency.
+1. `Anaconda3 <https://docs.anaconda.com/anaconda/install/>`_
+2. `nvidia docker <https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#installing-on-ubuntu-and-debian>`_ - Follow the linked instructions to install this dependency.
 
 
 Docker Installation
@@ -38,17 +38,17 @@ This process takes a long time so be prepared to wait while the program takes ca
 
 System Requirements for Local Installation
 ++++++++++++++++++++++++++++++++++++++++++
-**1.** **Ubuntu 20.04** (Focal Fossa) Operating System.
-**2.** `ROS2 Foxy Fitzroy <https://index.ros.org/doc/ros2/Installation/Foxy/>`_
-**3.** `Anaconda3 <https://docs.anaconda.com/anaconda/install/>`_
-**4.** `ONNX Runtime <https://microsoft.github.io/onnxruntime/>`_ - Follow `Installation`_ below to install this dependency.
-**5.** CMake >=3.15.2
+1. **Ubuntu 20.04** (Focal Fossa) Operating System.
+2. `ROS2 Foxy Fitzroy <https://index.ros.org/doc/ros2/Installation/Foxy/>`_
+3. `Anaconda3 <https://docs.anaconda.com/anaconda/install/>`_
+4. `ONNX Runtime <https://microsoft.github.io/onnxruntime/>`_ - Follow `Installation`_ below to install this dependency.
+5. CMake >=3.15.2
 
 
 *[Optional for Higher Performance]*
 
-**1.** CUDA (System tested on CUDA 10.2)
-**2.** CUDNN (System tested on CUDNN 7.6.5)
+1. CUDA (System tested on CUDA 10.2)
+2. CUDNN (System tested on CUDNN 7.6.5)
 
 
 Local Installation

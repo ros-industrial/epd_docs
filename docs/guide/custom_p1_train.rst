@@ -96,19 +96,19 @@ Train Model
 
 Follow the instructions below to get started training and generating your P1 ONNX model.
 
-1. Double-click on ``easy_perception_deployment.desktop`` on your Desktop. This file is generated following instructions under the `Setup <./setup.html>`_ section.
+**1.** Double-click on ``easy_perception_deployment.desktop`` on your Desktop. This file is generated following instructions under the `Setup <./setup.html>`_ section.
 
 A window labelled, **easy_perception_deployment**, will appear.
 
-2. Click on button labelled, **Train**, will appear.
+**2.** Click on button labelled, **Train**, will appear.
 
 A window labelled, **Train**, will appear.
 
-3. Click on button labelled, **P1**.
+**3.** Click on button labelled, **P1**.
 
 You have selected Precision Level 1 training framework.
 
-4. Click on DropDown Menu, **Set Model** and select the model you wish to run.
+**4.** Click on DropDown Menu, **Set Model** and select the model you wish to run.
 
 There are currently **only 6 pretrained model** available in the PyTorch Model Zoo. Each has its own pros and cons.
 
@@ -120,14 +120,14 @@ There are currently **only 6 pretrained model** available in the PyTorch Model Z
    # If you wish to prioritize accuracy over speed,
    Choose [densenet].
 
-5. Click on button labelled, **Choose Label List** and select the ``.txt`` label list file you have created under `Create Custom Label List`_.
+**5.** Click on button labelled, **Choose Label List** and select the ``.txt`` label list file you have created under `Create Custom Label List`_.
 
-6. Click on button labelled, **Choose Dataset** and select **the training dataset folder** you have created under `Arranging Data`_.
+**6.** Click on button labelled, **Choose Dataset** and select **the training dataset folder** you have created under `Arranging Data`_.
 
-7. Click on button labelled, **Validate Dataset** to verify if your dataset is in the correct prescribed file structure.
+**7.** Click on button labelled, **Validate Dataset** to verify if your dataset is in the correct prescribed file structure.
 
 If the dataset is properly arranged, the button labelled, **Train** will now be highlighted.
 
-8. Click on button labelled, **Train** to start training.
+**8.** Click on button labelled, **Train** to start training.
 
 The final ``.onnx`` trained model will be written to ``/data/model/`` directory in the package and timestamped with the date in which it was trained in the filename.

@@ -4,4 +4,4 @@ This is documentation for **ros-industrial** [easy_perception_deployment](https:
 # **View**
 The documentation is properly viewed via **readthedocs**.
 
-[Check out the full documentation here.](https://epd-docs.readthedocs.io/en/latest/)
+[Check out the full documentation here.](https://easy-perception-deployment.readthedocs.io/en/latest/)

@@ -16,8 +16,19 @@
 from sphinx.builders.html import StandaloneHTMLBuilder
 import subprocess, os
 
-# Doxygen
-subprocess.call('doxygen Doxyfile.in', shell=True)
+# Doxygen in readthedocs
+read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
+
+print(read_the_docs_build)
+
+if read_the_docs_build:
+
+    subprocess.call(
+        'git clone https://github.com/Briancbn/easy_perception_deployment -b pr-add-doxygen',
+        shell=True
+    )
+    subprocess.call('cd easy_perception_deployment; doxygen', shell=True)
+    subprocess.call('ln -s easy_perception_deployment/_build/ doxygen-build', shell=True)
 
 # -- Project information -----------------------------------------------------
 
@@ -93,7 +104,7 @@ html_theme_options = {
 # -- Breathe configuration -------------------------------------------------
 
 breathe_projects = {
-	"easy_perception_deployment":                                           "./_build/xml/"
+	"easy_perception_deployment": "doxygen-build/xml/"
 }
-breathe_default_project =                                           "easy_perception_deployment"
+breathe_default_project = "easy_perception_deployment"
 breathe_default_members = ('members', 'undoc-members')

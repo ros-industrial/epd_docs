@@ -24,7 +24,7 @@ print(read_the_docs_build)
 if read_the_docs_build:
 
     subprocess.call(
-        'git clone https://github.com/Briancbn/easy_perception_deployment -b pr-add-doxygen',
+        'git clone https://github.com/ros-industrial/easy_perception_deployment -b master',
         shell=True
     )
     subprocess.call('cd easy_perception_deployment; doxygen', shell=True)
